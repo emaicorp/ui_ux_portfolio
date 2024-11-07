@@ -19,3 +19,25 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* portfolio_site/app/globals.css */
+.btn {
+  @apply px-4 py-2 font-bold text-white rounded; /* Base styles for buttons */
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-orange-600; /* Primary button styles */
+}
+
+.btn-secondary {
+  @apply bg-secondary hover:bg-blue-600; /* Secondary button styles */
+}
+
+.btn-tertiary {
+  @apply bg-tertiary hover:bg-green-600; /* Tertiary button styles */
+}
+.glass-effect {
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  background-color: rgba(51, 49, 49, 0.3); /* Adjust the color and opacity */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  z-index: 999;
+}

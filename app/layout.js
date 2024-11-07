@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google"
 import "./globals.css";
 
 const geistSans = localFont({
@@ -11,6 +12,10 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600'],  // Specify the weights you want to use
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -19,9 +24,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${poppins.className} antialiased`}
       >
         {children}
       </body>
