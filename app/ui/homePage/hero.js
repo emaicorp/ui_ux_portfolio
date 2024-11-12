@@ -8,7 +8,7 @@ export default function HerosSection (){
                     <h6 className="text-mainColor md:text-[32px]">Gift Temzy</h6>
                     <div className="leading-[10px] flex md:block space-x-3 md:space-x-0">
                     <h1 className="md:text-[80px] leading-[80px] font-[1000]">UI & UX</h1>
-                    <h1 className="md:text-[80px] leading-[80px] font-[1000] md:mx-48">Designer</h1>
+                    <h1 className="md:text-[80px] leading-[80px] font-[1000] mx-48">Designer</h1>
                     </div>
                     <p className="w-100 mt-5">
                     Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra

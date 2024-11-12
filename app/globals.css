@@ -31,6 +31,9 @@ body {
 .btn-secondary {
   @apply bg-secondary hover:bg-blue-600; /* Secondary button styles */
 }
+.btn-neutral{
+  @apply text-black bg-slate-100 hover:bg-slate-300;
+}
 
 .btn-tertiary {
   @apply bg-tertiary hover:bg-green-600; /* Tertiary button styles */

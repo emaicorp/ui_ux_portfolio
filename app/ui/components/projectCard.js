@@ -1,13 +1,14 @@
 import Image from "next/image"
 export default function ProjectCard({image , label , text}){
     return(
-        <div className="">
-            <div>
+        <div className="w-full">
+            <div className="rounded ">
                 <Image
                 src={image}
-                height={100}
-                width={100}
+                height={0}
+                width={0}
                 alt={label}
+                style={{width :'100%',height : '100%'}}
                 />
             </div>
             <div>

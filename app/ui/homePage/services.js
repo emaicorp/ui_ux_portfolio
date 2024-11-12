@@ -1,16 +1,14 @@
 import Card from "@/app/ui/components/card";
 import { FaLaptop, FaMobileAlt, FaPencilRuler, FaVectorSquare } from 'react-icons/fa';
-
+import HeadingsDiv from "../components/headingDiv";
 const Services = () => {
   return (
-    <div className="min-h-screen mt-5 px-20 items-center justify-center">
-        <div className="items-center justify-center flex flex-col">
-            <h1 className="head-text text-center">
-                Services
-            </h1>
-            <p className="text-center w-1/2">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
-
-        </div>
+    <div className=" mt-5 px-20 items-center justify-center">
+      <HeadingsDiv 
+      heading="Services"
+      content="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium"
+      />
+    
         <div>
             <p></p>
         </div>
