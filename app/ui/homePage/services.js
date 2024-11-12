@@ -1,9 +1,9 @@
 import Card from "@/app/ui/components/card";
 import { FaLaptop, FaMobileAlt, FaPencilRuler, FaVectorSquare } from 'react-icons/fa';
 import HeadingsDiv from "../components/headingDiv";
-const Services = () => {
+const Services = ({animationClass}) => {
   return (
-    <div className=" mt-5 px-20 items-center justify-center">
+    <div className= {`${animationClass ? 'slide-in-left' : 'slide-out-left'} mt-5 px-20 items-center justify-center`}>
       <HeadingsDiv 
       heading="Services"
       content="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium"

@@ -1,7 +1,7 @@
 import Image from "next/image"
-export default function HerosSection (){
+export default function HerosSection ({animationClass}){
     return (
-        <div className="container px-20 mt-5">
+        <div className={`${animationClass ? 'slide-in' : 'slide-out'} container px-20 mt-5`}>
             <div className ="md:grid grid-cols-2  gap-x-4 text-white gap-4  h-fit  ">
                 <div className="  ">
                     <p className="md:text-[24px]">Hi I am</p>

@@ -4,7 +4,7 @@ import React from 'react';
 import TestimonialCarousel from '@/app/ui/components/carousel';
 import HeadingsDiv from '../components/headingDiv';
 
-const Testimonials = () => {
+const Testimonials = ({animationClass}) => {
     const testimonials = [
         {
             image: '/projectImages/project.svg',
@@ -30,7 +30,7 @@ const Testimonials = () => {
     ];
 
     return (
-        <div className=' bg-danger w-full  mt-20'>
+        <div className={`${animationClass ? 'slide-in-left' : 'slide-out-left'} bg-danger w-full  mt-20`}>
             <HeadingsDiv 
       heading="Testimonials"
       content="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium"

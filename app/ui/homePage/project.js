@@ -1,8 +1,8 @@
 import ProjectCard from "../components/projectCard"
 import HeadingsDiv from "../components/headingDiv"
-export default function Projects (){
+export default function Projects ({animationClass}){
     return (
-        <div className="px-20 ">
+        <div className={`px-20 ${animationClass ? 'slide-in-left' : 'slide-out-left'} `}>
              <HeadingsDiv 
              className="mt-7 mb-7"
       heading="Projects"
