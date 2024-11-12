@@ -1,17 +1,17 @@
 import Image from "next/image"
-export default function HerosSection ({animationClass}){
+export default function HerosSection ({animationClass, userdata}){
     return (
         <div className={`${animationClass ? 'slide-in' : 'slide-out'} container px-20 mt-5`}>
             <div className ="md:grid grid-cols-2  gap-x-4 text-white gap-4  h-fit  ">
                 <div className="  ">
                     <p className="md:text-[24px]">Hi I am</p>
-                    <h6 className="text-mainColor md:text-[32px]">Gift Temzy</h6>
+                    <h6 className="text-mainColor md:text-[32px]">{userdata.name}</h6>
                     <div className="leading-[10px] flex md:block space-x-3 md:space-x-0">
-                    <h1 className="md:text-[80px] leading-[80px] font-[1000]">UI & UX</h1>
-                    <h1 className="md:text-[80px] leading-[80px] font-[1000] mx-48">Designer</h1>
+                    <h1 className="md:text-[80px] leading-[80px] font-[1000]">{userdata.first_work}</h1>
+                    <h1 className="md:text-[80px] leading-[80px] font-[1000] mx-48">{userdata.second_work}</h1>
                     </div>
                     <p className="w-100 mt-5">
-                    Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra
+                        {userdata.intro_text}
                     </p>
                     <button className="btn btn-primary w-[188px] mt-5">Hire Me</button>
                     </div>

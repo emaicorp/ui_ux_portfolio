@@ -2,9 +2,9 @@
 import Image from "next/image";
 import ProgressBar from "../components/progressBar";
 
-export default function AboutMe({ animationClass, section }) {
- 
- 
+export default function AboutMe({ animationClass, section, userdata }) {
+ const services = userdata.services;
+
   return (
     <div  className={` container px-20 mt-5`}>
       <div className="grid grid-cols-2">
@@ -19,13 +19,16 @@ export default function AboutMe({ animationClass, section }) {
         <div className={`${animationClass ? 'slide-in-right' : 'slide-out-right'} mt-4`}>
           <h1 className="head-text">About Me</h1>
           <p className="mt-3">
-            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra
+            {userdata.about_me}
           </p>
           <div className="mt-3">
-            <ProgressBar label="UX" value={section ? 80 : 0} />
-            <ProgressBar label="Website Design" value={section ? 60 : 0} />
-            <ProgressBar label="App Design" value={section ? 70 : 0} />
-            <ProgressBar label="Graphic Design" value={section ? 90 : 0} />
+            {Object.entries(services).filter(([key]) => key !== 'text').map(([key, service]) => (
+                <ProgressBar 
+                    key={key} 
+                    label={key.replace('_', ' ')} // Replace underscores with spaces for display
+                    value={section ? service.percent : 0} 
+                />
+            ))}
           </div>
         </div>
       </div>

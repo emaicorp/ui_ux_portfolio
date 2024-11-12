@@ -8,6 +8,7 @@ import Projects from "./ui/homePage/project";
 import Testimonials from "./ui/homePage/testimonials";
 import Contact from "./ui/homePage/contact";
 import Footer from "./ui/includes/footer";
+ import Userdata from "@/app/lib/userDetails.json"
 
 export default function Home() {
     const [visibleSections, setVisibleSections] = useState({
@@ -49,22 +50,22 @@ export default function Home() {
             <div className="mt-36"></div>
             <NavBar />
             <div id="hero" className={`section`}>
-                <HerosSection animationClass={visibleSections.hero } />
+                <HerosSection animationClass={visibleSections.hero } userdata = {Userdata} />
             </div>
             <div id="about" className={`section`}>
-                <AboutMe animationClass={visibleSections.about } section = {visibleSections.about} />
+                <AboutMe animationClass={visibleSections.about } section = {visibleSections.about} userdata ={Userdata} />
             </div>
             <div id="services" className={`section`}>
-                <Services animationClass={visibleSections.services } />
+                <Services animationClass={visibleSections.services } userdata = {Userdata}  />
             </div>
             <div id="projects" className={`section`}>
-                <Projects animationClass={visibleSections.projects } />
+                <Projects animationClass={visibleSections.projects } userdata = {Userdata}/>
             </div>
             <div id="testimonials" className={`section`}>
-                <Testimonials animationClass={visibleSections.testimonials} />
+                <Testimonials animationClass={visibleSections.testimonials} userdata = {Userdata}/>
             </div>
             <div id="contact" className={`section`}>
-                <Contact animationClass={visibleSections.contact } />
+                <Contact animationClass={visibleSections.contact }  />
             </div>
             <Footer />
         </div>

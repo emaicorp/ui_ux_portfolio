@@ -30,7 +30,7 @@ const Testimonials = ({animationClass}) => {
     ];
 
     return (
-        <div className={`${animationClass ? 'slide-in-left' : 'slide-out-left'} bg-danger w-full  mt-20`}>
+        <div className={`${animationClass ? 'slide-in-right' : 'slide-out-right'} bg-danger w-full  mt-20`}>
             <HeadingsDiv 
       heading="Testimonials"
       content="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium"

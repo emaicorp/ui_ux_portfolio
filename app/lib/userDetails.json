@@ -1,0 +1,81 @@
+{
+    "name" : "Gift Olungwe",
+    "age"  : "26",
+    "first_work":"UI & UX",
+    "second_work":"Designer",
+    "intro_text": "Welcome to my creative space! Here, I bring ideas to life through design, dedication, and a passion for crafting user experiences that resonate. Let’s explore my journey and how I can help turn your vision into reality",
+
+    "about_me" : "I’m a dedicated designer with a knack for creating thoughtful, user-centered experiences. My background spans various design fields, where I focus on merging functionality with creativity to deliver impactful solutions. With every project, I aim to make technology feel more accessible and enjoyable for users, while helping brands tell their stories in visually engaging ways. When I'm not designing, you’ll likely find me exploring new design trends or refining my skills. Let’s connect and see how I can bring your ideas to life!",
+    "services" :{
+        "text":"I offer a range of design services tailored to meet your needs",
+        "ui_ux" :{
+            "service":"UI/UX",
+            "percent" : 80,
+            "icon": "FaPencilRuler",
+            "text" : "Crafting intuitive, delightful interfaces that prioritize user needs."
+        },
+        "Web_Design" :{
+            "service":"Web Design",
+            "percent": 60,
+            "icon": "FaLaptop",
+            "text" :"Translating ideas into interactive designs ready for development"
+        },
+        "App_Design" :{
+            "service":"App Design",
+            "percent": 40,
+            "icon": "FaMobileAlt",
+            "text" :"Building sleek, responsive layouts that stand out on any device."
+        },
+        "Graphic_Design" :{
+            "service":"Graphic Design",
+            "percent" : 90,
+            "icon": "FaVectorSquare",
+            "text":"Helping you shape a distinct brand that speaks to your audience."
+        }
+    },
+    "projects":{
+        "text":"Here’s a showcase of my work across different industries, from fintech and e-commerce to social media and healthcare. Each project reflects my commitment to detail, creativity, and functionality. Click through to explore the design journey, challenges, and unique solutions crafted for each client.",
+        "project1":{
+            "name" : "project1",
+            "image_url" : "/projectImages/project.svg",
+            "text" : "hello project1"
+        },
+        "project2":{
+            "name" : "project2",
+            "image_url" : "/projectImages/project.svg",
+            "text" : "hello project2"
+        },
+        "project3":{
+            "name" : "project3",
+            "image_url" : "/projectImages/project.svg",
+            "text" : "hello project3"
+        }
+    },
+    "testimonials":{
+        "text":"Don’t just take my word for it – here’s what my clients have to say",
+        "testimonial1":{
+            "image_url":"/projectImages/project.svg",
+            "text":"Gift brought our vision to life with such precision and creativity. The results exceeded our expectations!",
+            "name":"John Doe",
+            "position":"employee"
+        },
+        "testimonial2":{
+            "image_url":"/projectImages/project.svg",
+            "text":"Working with Gift was seamless and inspiring. Her designs elevated our product’s appeal instantly!",
+            "name":"John Doe",
+            "position":"employee"
+        },  
+         "testimonial3":{
+            "image_url":"/projectImages/project.svg",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel purus placerat volutpat.",
+            "name":"John Doe",
+            "position":"employee"
+        },  
+         "testimonial4":{
+            "image_url":"/projectImages/project.svg",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vel purus placerat volutpat.",
+            "name":"John Doe",
+            "position":"employee"
+        }
+    }
+}

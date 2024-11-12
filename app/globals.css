@@ -13,6 +13,9 @@
     --foreground: #ededed;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--foreground);
@@ -53,11 +56,11 @@ body {
 }
 /* styles.css or your component's CSS file */
 .slide-in {
-  animation: slideIn 0.5s forwards;
+  animation: slideIn 1s ease forwards;
 }
 
 .slide-out {
-  animation: slideOut 0.5s forwards;
+  animation: slideOut 1s ease forwards;
 }
 
 @keyframes slideIn {
@@ -83,19 +86,19 @@ body {
 }
 /* styles.css or your component's CSS file */
 .slide-in-left {
-  animation: slideInLeft 0.7s forwards;
+  animation: slideInLeft 1s ease forwards;
 }
 
 .slide-out-left {
-  animation: slideOutLeft 0.7s forwards;
+  animation: slideOutLeft 1s ease forwards;
 }
 
 .slide-in-right {
-  animation: slideInRight 0.7s forwards;
+  animation: slideInRight 1s ease forwards;
 }
 
 .slide-out-right {
-  animation: slideOutRight 0.7s forwards;
+  animation: slideOutRight 1s ease forwards;
 }
 
 @keyframes slideInLeft {
