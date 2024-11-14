@@ -19,8 +19,8 @@
   }
   
   .progress {
+    @apply bg-mainColor;
     height: 100%;
-    background-color: #ff6600; /* Orange color */
     transition: width 3s ease; /* Smooth transition */
     border-radius: 5px;
   }

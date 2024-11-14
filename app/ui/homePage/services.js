@@ -6,12 +6,13 @@ const Services = ({ animationClass, userdata }) => {
   const services = userdata.services;
 
   return (
-    <div className={`${animationClass ? "slide-in-right" : "slide-out-right"} mt-5 px-20 items-center justify-center`}>
+    <div className="animated-container" id="services">
+    <div className={`${animationClass ? "slide-in-right" : "slide-out-right"} mt-16 px-20 items-center justify-center`}>
       <HeadingsDiv
         heading="Services"
         content={services.text}
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         {Object.entries(services)
           .filter(([key]) => key !== "text")
           .map(([key, service]) => {
@@ -26,6 +27,7 @@ const Services = ({ animationClass, userdata }) => {
             );
           })}
       </div>
+    </div>
     </div>
   );
 };

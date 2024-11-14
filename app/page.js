@@ -45,10 +45,19 @@ export default function Home() {
         };
     }, []);
 
+    const links = [
+        { text: 'Home', path: '#' },
+        { text: 'About Me', path: '#about' },
+        { text: 'Services', path: '#services' },
+        { text: 'Projects', path: '#projects' },
+        { text: 'Testimonials', path: '#testimonials' },
+        { text: 'Contact Me', path: '#contact' }
+    ];
+
     return (
         <div>
             <div className="mt-36"></div>
-            <NavBar />
+            <NavBar  link = {links} userdata={Userdata}/>
             <div id="hero" className={`section`}>
                 <HerosSection animationClass={visibleSections.hero } userdata = {Userdata} />
             </div>
@@ -65,9 +74,9 @@ export default function Home() {
                 <Testimonials animationClass={visibleSections.testimonials} userdata = {Userdata}/>
             </div>
             <div id="contact" className={`section`}>
-                <Contact animationClass={visibleSections.contact }  />
+                <Contact animationClass={visibleSections.contact } userdata = {Userdata} />
             </div>
-            <Footer />
+            <Footer link ={links} userdata={Userdata} />
         </div>
     );
 }

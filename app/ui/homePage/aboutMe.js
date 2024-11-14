@@ -6,11 +6,12 @@ export default function AboutMe({ animationClass, section, userdata }) {
  const services = userdata.services;
 
   return (
-    <div  className={` container px-20 mt-5`}>
+    <div className="animated-container" id="about">
+    <div  className={` container px-20 mt-16`}>
       <div className="grid grid-cols-2">
         <div className={`relative h-[476px] ${animationClass ? 'slide-in-left' : 'slide-out-left'}`}>
           <Image
-            src="/userImages/hero_image2.svg"
+            src={userdata.images.about_url}
             fill // Updated layout attribute
             alt="About Me Image"
             className="relative"
@@ -32,6 +33,7 @@ export default function AboutMe({ animationClass, section, userdata }) {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -2,18 +2,19 @@
 import HeadingsDiv from "../components/headingDiv"
 import { useState } from 'react';
 
-export default function Contact({animationClass}){
+export default function Contact({animationClass,userdata}){
     const [email, setEmail] = useState('');
 
     const handleContactMe = () => {
         const subject = 'Contact Request';
         const body = `I would like to get in touch. My email is: ${email}`;
-        const mailtoLink = `mailto:emaicorp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:${userdata.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         
         window.location.href = mailtoLink; // Open the user's email client
     };
 
     return (
+      <div className="animated-container" id="contact">
         <div className={`${animationClass ? 'slide-in-left' : 'slide-out-left'} mb-20 bg-danger w-full  mt-20`}>
       <HeadingsDiv 
       heading="Lets Design Together"
@@ -31,6 +32,7 @@ export default function Contact({animationClass}){
         <button type="button" onClick={handleContactMe} className="btn btn-primary rounded-[14px]">Contact Me</button>
 
       </div>
+        </div>
         </div>
     )
 }

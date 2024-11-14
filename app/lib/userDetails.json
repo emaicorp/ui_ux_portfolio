@@ -3,6 +3,9 @@
     "age"  : "26",
     "first_work":"UI & UX",
     "second_work":"Designer",
+    "email":"test@gmail.com",
+    "resume":"/logo1.svg",
+    "logo":"/logo1.svg",
     "intro_text": "Welcome to my creative space! Here, I bring ideas to life through design, dedication, and a passion for crafting user experiences that resonate. Let’s explore my journey and how I can help turn your vision into reality",
 
     "about_me" : "I’m a dedicated designer with a knack for creating thoughtful, user-centered experiences. My background spans various design fields, where I focus on merging functionality with creativity to deliver impactful solutions. With every project, I aim to make technology feel more accessible and enjoyable for users, while helping brands tell their stories in visually engaging ways. When I'm not designing, you’ll likely find me exploring new design trends or refining my skills. Let’s connect and see how I can bring your ideas to life!",
@@ -77,5 +80,16 @@
             "name":"John Doe",
             "position":"employee"
         }
+    },
+    "social_links":{
+        "facebook":"facebook.com",
+        "twitter":"twitter.com",
+        "linkedin":"linkedin.com",
+        "instagram":"instagram.com"
+    },
+    "images":{
+        "hero_url":"/userImages/hero_image.svg",
+        "about_url":"/userImages/hero_image2.svg"
     }
+    
 }

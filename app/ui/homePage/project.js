@@ -4,8 +4,9 @@ export default function Projects({ animationClass, userdata }) {
   const projects = userdata.projects;
   const services = userdata.services;
   return (
+    <div className="animated-container" id="project">
     <div
-      className={`px-20 ${
+      className={`px-20 mt-16 ${
         animationClass ? "slide-in-left" : "slide-out-left"
       } `}
     >
@@ -29,7 +30,7 @@ export default function Projects({ animationClass, userdata }) {
             </button>
           ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-7">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-7">
   {Object.entries(projects)
     .filter(([key]) => key !== "text")
     .map(([key, project]) => (
@@ -42,6 +43,7 @@ export default function Projects({ animationClass, userdata }) {
     ))}
 </div>
 
+    </div>
     </div>
   );
 }

@@ -13,6 +13,10 @@
     --foreground: #ededed;
   }
 }
+*{
+  /* border: 1px solid red; */
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -22,7 +26,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  width: 100%;
+  width: fit-content;
 }
 /* portfolio_site/app/globals.css */
 .btn {
@@ -43,12 +47,15 @@ body {
 .btn-tertiary {
   @apply bg-tertiary hover:bg-green-600; /* Tertiary button styles */
 }
+/* Adjust glass-effect for smoother transition */
 .glass-effect {
-  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
-  background-color: rgba(51, 49, 49, 0.3); /* Adjust the color and opacity */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  backdrop-filter: blur(10px);
+  background-color: rgba(51, 49, 49, 0.3);
+  transition: background-color 0.3s ease, max-height 0.7s ease;
   z-index: 999;
+  overflow: hidden;
 }
+
 .head-text{
   font-size: 65px;
   font-weight: 600;
@@ -143,4 +150,12 @@ body {
       transform: translateX(100%);
       opacity: 0;
   }
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.animated-container {
+    overflow: hidden; /* Prevent overflow for the container */
 }
